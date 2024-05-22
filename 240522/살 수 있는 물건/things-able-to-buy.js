@@ -6,6 +6,6 @@ if(n>=3000){
 console.log("book")
 }else if(n>=1000){
     console.log("mask")
-}else if(n=0){
+}else {
     console.log("no");
 }
