@@ -6,9 +6,9 @@ let n1=Number(n[0]);
 let n2=Number(n[1]);
 
 if(n1 >= 90 && n2>=95){
-    console.log(10);
-}else if(n2 >= 90){
-    console.log(5);
+    console.log(100000);
+}else if(n1>=90 && n2 >= 90){
+    console.log(50000);
 }else{
     console.log(0);
 }
