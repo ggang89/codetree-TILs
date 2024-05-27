@@ -1,6 +1,5 @@
-const fs=require("fs");
-
-let input=fs.readFileSync(0).toString().split("\n");
+const fs = require("fs");
+let input = fs.readFileSync(0).toString().trim().split(" ");
 
 let middleScore = Number(input[0]);
 let finalScore = Number(input[1]);
