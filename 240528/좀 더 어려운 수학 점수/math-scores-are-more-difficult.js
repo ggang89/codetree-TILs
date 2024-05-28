@@ -14,12 +14,12 @@ let aEng = Number(aa[1]);
 let bMath=Number(bb[0]);
 let bEng=Number(bb[1]);
 
-if(aMath > bMath){
+if(aMath > bMath ){
     console.log("A");
-}else{
+}else if(bMath > aMath){
     console.log("B");
 }
-if(aMath === bMath && aEng > bEng){
+else if(aMath === bMath && aEng > bEng){
     console.log("A")
 }else if(aMath === bMath && bEng > aEng){
     console.log("B");
