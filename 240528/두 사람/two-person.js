@@ -12,9 +12,10 @@ let s1_gender=input1[1];
 let s2_year=Number(input2[0]);
 let s2_gender=input2[1];
 
-//if(s1_gender === 'M' || s2_gender === 'M'){
-//    console.log(1);
-//}else{
-//    console.log(0);
-//}
-console.log(s1_gender == 'M' || s2_gender == 'M' ? 1:0);
+if(s1_gender === 'M' && s2_gender === 'M'){
+    console.log(1);
+}else if(s1_gender ==='M' || s2_gender ==='M'){
+    console.log(1);
+}else{
+    console.log(0);
+}
