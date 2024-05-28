@@ -8,13 +8,15 @@ let input2=input[1].split(" ");//['20', 'w' ]
 
 let s1_year=Number(input1[0]);
 let s1_gender=input1[1];
+//console.log(s1_gender);
 
 let s2_year=Number(input2[0]);
 let s2_gender=input2[1];
+//console.log(s2_gender)
 
-if(s1_gender === 'M' && s2_gender === 'M'){
+if(s1_gender === 'M' ){
     console.log(1);
-}else if(s1_gender ==='M' || s2_gender ==='M'){
+}else if( s2_gender ==='M'){
     console.log(1);
 }else{
     console.log(0);
