@@ -17,4 +17,4 @@ let s2_gender=input2[1];
 //}else{
 //    console.log(0);
 //}
-console.log(s1_gender === 'M' || s2_gender === 'M' ? 1:0);
+console.log(s1_gender == 'M' || s2_gender == 'M' ? 1:0);
