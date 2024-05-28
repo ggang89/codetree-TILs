@@ -1,6 +1,6 @@
 const fs=require("fs");
 
-let y=Number(fs.readFileSync(0).toString().trim());
+let n=Number(fs.readFileSync(0).toString().trim());
 
 //1. 먼저 2월인지 판단한다. 2월이면 28일 출력
 //2. 2월이 아니면 7보다 같거나 작은지, 7보다 큰지 판단한다
