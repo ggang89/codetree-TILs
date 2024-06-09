@@ -10,11 +10,10 @@ if(c === "A"){
         result +=i+" ";
 
     } 
-    console.log(result);
 }
  else if(c === "D"){
-    for(i = n; i =1; i--){
-        result +=n;
+    for(i = n; i >=1; i--){
+        result += i + " ";
     }
-    console.log(result);
 }
+console.log(result);
