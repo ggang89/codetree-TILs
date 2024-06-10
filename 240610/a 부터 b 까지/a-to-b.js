@@ -5,19 +5,16 @@ let input =fs.readFileSync(0).toString().split(" ");
 let a=Number(input[0]);
 let b=Number(input[1]);
 
-let result=a;
 
-for(i = a; i < b; ){
-    if(a<b){
-        if(i % 2 === 1){
-        i=i*2;
-        result +=" "+i;
-        
-        }else if(i % 2 === 0){
-         i=i+3;
-        result += " " +i;
+let result = "";
+while (a <= b) {
+    result += a + " ";
+    if (a % 2 === 1) {
+        a *= 2;
     }
+    else {
+        a += 3;
     }
-    
-};
+}
+
 console.log(result);
