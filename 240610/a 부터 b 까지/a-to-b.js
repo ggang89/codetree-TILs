@@ -7,7 +7,7 @@ let b=Number(input[1]);
 
 let result=a;
 
-for(i = a; i <= b; ){
+for(i = a; i < b; ){
     if(a<b){
         if(i % 2 === 1){
         i=i*2;
