@@ -7,7 +7,7 @@ let n=Number(input[0]);
 let sum=0;
 
 for(i=1; i<=n; i++){
-    let x= input[i];
+    let x= Number(input[i]);
     if(x % 2 ===1 && x % 3 ===0){
         sum +=x;
     }
