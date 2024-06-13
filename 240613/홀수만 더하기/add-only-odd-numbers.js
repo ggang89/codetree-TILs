@@ -5,9 +5,9 @@ let input = fs.readFileSync(0).toString().split("\n");
 let sum=0;
 
 for(let i =0; i < input.length; i++){
-    input[i];
-    if(input[i] % 2 === 1 && input[i] % 3 === 0){
-        sum +=input[i];
+    let n = Number(input[i]);
+    if(n % 2 === 1 && n % 3 === 0){
+        sum +=n;
     }
 }
 console.log(sum);
