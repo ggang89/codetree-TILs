@@ -7,11 +7,10 @@ let cnt=0;
 while(true){
     let old=Number(input[index]);
     index++;
-    if(old < 30){
+    if(old < 30 && 19<old){
     sum += old;
     cnt++;
-    }
-    else if(old >= 30 || old <=19){
+    } else if(old >= 30 || old <=19){
         break;
     }
 };
