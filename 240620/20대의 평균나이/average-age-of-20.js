@@ -6,14 +6,13 @@ let sum=0;
 let cnt=0;
 while(true){
     let old=Number(input[index]);
+    index++;
     if(old < 30){
     sum += old;
     cnt++;
-    index++;
     }
     if(old >= 30){
         break;
     }
-
 }
 console.log((sum/cnt).toFixed(2));
