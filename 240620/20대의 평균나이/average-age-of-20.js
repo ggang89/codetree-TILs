@@ -11,7 +11,7 @@ while(true){
     sum += old;
     cnt++;
     }
-    else if(old >= 30){
+    else if(old >= 30 || old <=19){
         break;
     }
 };
