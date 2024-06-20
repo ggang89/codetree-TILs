@@ -8,7 +8,7 @@ while(true){
     n = Math.floor(n / i);
     i++;
     cnt++;
-    if(n === 0){
+    if(n <= 1){
         console.log(cnt);
         break;
     } 
