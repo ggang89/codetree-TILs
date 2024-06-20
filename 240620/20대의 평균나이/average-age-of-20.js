@@ -14,5 +14,5 @@ while(true){
     else if(old >= 30){
         break;
     }
-}
+};
 console.log((sum/cnt).toFixed(2));
