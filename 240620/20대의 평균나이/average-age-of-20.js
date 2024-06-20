@@ -11,9 +11,7 @@ while(true){
     cnt++;
     index++;
     }
-    
     if(old >= 30){
-        
         break;
     }
 
