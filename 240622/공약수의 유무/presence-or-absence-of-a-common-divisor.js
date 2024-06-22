@@ -11,7 +11,7 @@ for(let i =a; i<= b;i++){
         satisfiled = true;
     }
 };
-if(satisfiled === true){
+if(satisfiled == true){
     console.log(1);
 }else{
     console.log(0);
