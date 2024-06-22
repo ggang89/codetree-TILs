@@ -11,9 +11,15 @@ let satisfied=false;
 for( let i = a; i <= b; i++){
     if(i % c === 0){
         satisfied=true;
+    }else{
+       continue;
+        
+        
     }
     if(satisfied === true){
         console.log("YES");
         break;
+    }else{
+        console.log("NO");
     }
 };
