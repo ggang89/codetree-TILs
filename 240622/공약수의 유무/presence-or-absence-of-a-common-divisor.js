@@ -7,7 +7,7 @@ let b = Number(input[1]);
 let satisfiled = false;
 
 for(let i =a; i<= b;i++){
-    if( 1920 % i === 0 &&  2880 % i=== 0){
+    if( 1920 % i === 0 ||  2880 % i=== 0){
         satisfiled = true;
     }
 };
