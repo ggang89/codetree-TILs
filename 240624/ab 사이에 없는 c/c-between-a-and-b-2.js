@@ -11,10 +11,9 @@ let satified=true;
 for(let i =a; i<=b;i++){
     if(i % c === 0){
         satified=false;
-
     }
 }
-if(satified=true){
+if(satified === true){
     console.log("YES")
 }else{
     console.log("NO")
