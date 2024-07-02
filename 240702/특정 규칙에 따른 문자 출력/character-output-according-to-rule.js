@@ -16,7 +16,7 @@ for(let i = 0; i < n; i++){ //0 1 2
 }
 for(let i=0; i < n-1;i++){ // 0 1
     str=""
-    for(let j=0 ; j <=1-i; j++){//1 0
+    for(let j=0 ; j <n-i-1; j++){//1 0
         str +="@ "
     }
     console.log(str)
