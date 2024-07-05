@@ -21,3 +21,22 @@ console.log(sumVal);
 
 >> 9
 */
+
+const fs=require("fs")
+let arr = fs.readFileSync(0).toString().split(" ").map(Number);//배열의 요소를 숫자로 만들어줌
+let sum=0
+let cnt=0
+
+
+// 10개의 정수 중 250 이상의 수가 나올 때 까지의 수의 합계와 개수를 구합니다.
+for (let elem of input) {
+    if (elem >= 250) break;
+    sum += elem;
+    cnt++;
+}
+
+// 평균을 구합니다.
+let avg = (sum / cnt).toFixed(1);
+
+// 출력
+console.log(sum, avg);
