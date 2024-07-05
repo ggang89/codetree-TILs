@@ -23,7 +23,7 @@ console.log(sumVal);
 */
 
 const fs=require("fs")
-let arr = fs.readFileSync(0).toString().split(" ").map(Number);//배열의 요소를 숫자로 만들어줌
+let input = fs.readFileSync(0).toString().split(" ").map(Number);//배열의 요소를 숫자로 만들어줌
 let sum=0
 let cnt=0
 
