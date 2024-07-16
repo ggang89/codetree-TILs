@@ -14,7 +14,7 @@ while(true){
     if(a <=1) break;
 }
 //console.log(arr)//[ 2, 2, 3, 3, 0 ]
-let cnt=[0,0,0,0]
+let cnt=Array(arr.length).fill(0);
 for(let i = 0; i < arr.length; i++){
     cnt[arr[i]]++; 
 }
