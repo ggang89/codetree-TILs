@@ -1,6 +1,6 @@
 const fs=require("fs");
 
-let [, tempArrString, ...rest] = fs.readFileSync(0).toString().split("\n");
+let [, tempArrString, ...rest] = fs.readFileSync(0).toString().trim().split("\n");
 const arr = tempArrString.split(" ").map(Number);
 
 for(const r of rest){
