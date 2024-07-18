@@ -8,7 +8,7 @@ for(const r of rest){
     const [, index] = r.split(" ").map(Number);
     console.log(arr[index-1]);
   } else if(r[0] === "2"){
-    const target = Number(r[2]);
+    const [, target] = r.split(" ").map(Number);
     const value = arr.findIndex(v => v === target);
     console.log(value+1);
   } else {
