@@ -7,4 +7,4 @@ let nrr = input[1].split(" ").map(Number);
 
 // console.log(nrr) // 6, 5, 10, 2, 5, 2, 8,  9, 2, 3
 let c=nrr.sort((a,b)=>(a-b))
-console.log(c[9],c[8])
+console.log(c[c.length-1],c[c.length-2])
