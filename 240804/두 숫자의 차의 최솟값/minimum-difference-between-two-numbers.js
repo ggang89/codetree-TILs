@@ -5,9 +5,7 @@ let arr = input[1].split(" ").map(Number);
 let minValue = arr[0];
 
 for(let i = 0;i < n; i++){
-    for(let j = 0; j < n; j++){
-        let value = arr[j]-arr[i]
-        if(value < minValue && value > 0) minValue = value;
-    }
+    let value= arr[i+1]-arr[i]
+    if(value < minValue) minValue = value
 }
 console.log(minValue)
