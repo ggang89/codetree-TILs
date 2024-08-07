@@ -22,11 +22,10 @@ for(let i = 0; i < n; i++){
            arr3[i][j] =0
           } 
           else arr3[i][j] =1
-         
      }
   } //console.log(arr3)
 
-  console.log(arr3[0].join(" "))
-  console.log(arr3[1].join(" "))
-  console.log(arr3[2].join(" "))
-  console.log(arr3[3].join(" "))
+  console.log(arr3[0].join(" ").trim())
+  console.log(arr3[1].join(" ").trim())
+  console.log(arr3[2].join(" ").trim())
+  console.log(arr3[3].join(" ").trim())
