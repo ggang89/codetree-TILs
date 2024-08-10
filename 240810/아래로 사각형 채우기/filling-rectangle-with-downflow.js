@@ -8,7 +8,7 @@ for(let i = 0; i < n; i++){
     let num = 1+i
     for(let j = 0; j < n; j++){
         arr2d[i][j] = num
-        num +=5;
+        num +=n;
     }
 
 }
