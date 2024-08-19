@@ -1,37 +1,33 @@
-const fs = require("fs")
+// 변수 선언 및 입력
+const fs = require("fs");
 let n = Number(fs.readFileSync(0).toString().trim());
 
-let arr2d=Array(n).fill(0).map(()=>Array(n).fill(0));
+// 격자를 채워줍니다.
+let answer = Array(n).fill(0).map(() => Array(n).fill(0));
+let count = 1;
 
-let num = 1;
-for (let i = n - 1; i >= 0; i--) {
-    if(n%2 === 0){
-        if (i % 2 === 0) {
-            for (let j = 0; j < n; j++) {
-                arr2d[j][i] = num++;
-            }
-        } else {
-            for (let j = n - 1; j >= 0; j--) {
-                arr2d[j][i] = num++;
-            }
+for (let col = n - 1; col >= 0; col--) {
+    if ((n - 1 - col) % 2 === 0) {
+        // 이 케이스에는 아래에서 위로 값을 채워줍니다.
+        for (let row = n - 1; row >= 0; row--) {
+            answer[row][col] = count;
+            count++;
         }
-    }else{
-        if (i % 2 !== 0) {
-            for (let j = 0; j < n; j++) {
-                arr2d[j][i] = num++;
-            }
-        } else {
-            for (let j = n - 1; j >= 0; j--) {
-                arr2d[j][i] = num++;
-            }
+    }
+    else {
+        // 이 케이스에는 위에서 아래로 값을 채워줍니다.
+        for (let row = 0; row < n; row++) {
+            answer[row][col] = count;
+            count++;
         }
     }
 }
 
-for (let arr of arr2d) {
+// 출력:
+for (let row of answer) {
     let str = "";
-    for (let item of arr) {
-        str += item + " ";
+    for (let elem of row) {
+        str += elem + " ";
     }
-    console.log(str.trim());
+    console.log(str);
 }
