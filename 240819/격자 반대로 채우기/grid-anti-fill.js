@@ -1,29 +1,37 @@
 const fs = require("fs")
 let n = Number(fs.readFileSync(0).toString().trim());
 
-let arr2d=Array(n).fill().map(()=>Array(n).fill(0));
-let cnt=1;
-for(let j = n-1; j >= 0; j--){
-    if(j % 2 !==0){ //홀수
-    for(let i = n-1; i >= 0; i--){
-            arr2d[i][j] =cnt;
-            cnt++;
-        }
-    }
-    else{//짝수
-        for(let i = 0; i < n; i++){
-            arr2d[i][j]=cnt;
-            cnt++
+let arr2d=Array(n).fill(0).map(()=>Array(n).fill(0));
 
+let num = 1;
+for (let i = n - 1; i >= 0; i--) {
+    if(n%2 === 0){
+        if (i % 2 === 0) {
+            for (let j = 0; j < n; j++) {
+                arr2d[j][i] = num++;
+            }
+        } else {
+            for (let j = n - 1; j >= 0; j--) {
+                arr2d[j][i] = num++;
+            }
+        }
+    }else{
+        if (i % 2 !== 0) {
+            for (let j = 0; j < n; j++) {
+                arr2d[j][i] = num++;
+            }
+        } else {
+            for (let j = n - 1; j >= 0; j--) {
+                arr2d[j][i] = num++;
+            }
         }
     }
 }
 
-let str="";
-for(let arr of arr2d){
-    str =""
-    for(let a of arr){
-        str += a+" "
+for (let arr of arr2d) {
+    let str = "";
+    for (let item of arr) {
+        str += item + " ";
     }
-    console.log(str)
+    console.log(str.trim());
 }
