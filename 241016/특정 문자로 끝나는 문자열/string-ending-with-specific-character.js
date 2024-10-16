@@ -9,7 +9,9 @@ for(let i = 0; i <input.length; i++){
     if(input[i][a] === n && input[i].length >1 ){
         console.log(input[i]);
          cnt++;
-    } if(cnt === 0){
+       
+    } 
+      if(cnt === 0){
         console.log("None")
     }
 }
