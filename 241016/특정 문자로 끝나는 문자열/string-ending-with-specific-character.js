@@ -11,7 +11,8 @@ for(let i = 0; i <input.length; i++){
          cnt++;
        
     } 
-      if(cnt === 0){
+      
+}
+if(cnt === 0){
         console.log("None")
     }
-}
