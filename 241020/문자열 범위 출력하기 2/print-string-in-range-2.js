@@ -7,8 +7,9 @@ let backstr="";
 let cnt=0;
 //console.log(str)
 for(let i = str.length-1; i >= str.length - n; i--){
+    if(cnt >= n) break;
     backstr +=str[i];
     cnt ++;
-    if(cnt >= n) break;
+    
 }
 console.log(backstr)
