@@ -5,10 +5,12 @@ let input= fs.readFileSync(0).toString().trim();
 let ee = 0;
 let eb = 0;
 
-if(input.indexOf("ee") !== -1){
-    ee++;
-}
-if(input.indexOf("eb") !== -1){
-    eb++;
+for(let i = 0; i < input.length; i++){
+    if(input.slice(i,i+2) === "ee"){
+        ee++
+    }
+    if(input.slice(i,i+2) ==="eb"){
+        eb++
+    }
 }
 console.log(ee,eb)
