@@ -4,4 +4,9 @@ let input =fs.readFileSync(0).toString().trim();
 
 let nextStrNumber=input.charCodeAt(0)+1;
 
-console.log(String.fromCharCode(nextStrNumber))
+let result=String.fromCharCode(nextStrNumber);
+
+if(input ==='z'){
+   nextStrNumber='a'.charCodeAt(0)-1;
+};
+console.log(result)
