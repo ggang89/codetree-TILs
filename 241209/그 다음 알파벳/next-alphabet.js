@@ -7,6 +7,6 @@ let nextStrNumber=input.charCodeAt(0)+1;
 let result=String.fromCharCode(nextStrNumber);
 
 if(input ==='z'){
-   nextStrNumber='a'.charCodeAt(0)-1;
+   nextStrNumber='a'.charCodeAt(0);
 };
 console.log(result)
