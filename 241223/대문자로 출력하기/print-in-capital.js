@@ -16,7 +16,7 @@ str += i
 } 
 
 for(let s of str){
-   if(s.charCodeAt(0) <91 || s.charCodeAt(0)>93){
+   if(s.charCodeAt(0) <91 || s.charCodeAt(0)>96){
     str2 += s
    }}
    console.log(str2.toUpperCase())
